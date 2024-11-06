@@ -26,28 +26,28 @@ module "sandbox" {
   account_customizations_name = "sandbox"
 }
 
-module "aft-import-sandbox3" {
-  source = "./modules/aft-account-request"
+# module "aft-import-sandbox3" {
+#   source = "./modules/aft-account-request"
 
-  control_tower_parameters = {
-    AccountEmail              = "devavratoka+sandbox3@gmail.com"
-    AccountName               = "sandbox3"
-    ManagedOrganizationalUnit = "Sandbox"
-    SSOUserEmail              = "devavratoka+sandbox3@gmail.com"
-    SSOUserFirstName          = "Admin"
-    SSOUserLastName           = "User"
-  }
+#   control_tower_parameters = {
+#     AccountEmail              = "devavratoka+sandbox3@gmail.com"
+#     AccountName               = "sandbox3"
+#     ManagedOrganizationalUnit = "Sandbox"
+#     SSOUserEmail              = "devavratoka+sandbox3@gmail.com"
+#     SSOUserFirstName          = "Admin"
+#     SSOUserLastName           = "User"
+#   }
 
-  account_tags = {}
+#   account_tags = {}
 
-  change_management_parameters = {
-    change_requested_by = "Devavrat Oka"
-    change_reason       = "Import Sandbox3 account in AFT"
-  }
+#   change_management_parameters = {
+#     change_requested_by = "Devavrat Oka"
+#     change_reason       = "Import Sandbox3 account in AFT"
+#   }
 
-  custom_fields = {
-    group = "sandbox"
-  }
+#   custom_fields = {
+#     group = "sandbox"
+#   }
 
-  account_customizations_name = "sandbox"
-}
+#   account_customizations_name = "sandbox"
+# }
